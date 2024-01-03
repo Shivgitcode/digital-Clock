@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-mygradient {
+    background-image: linear-gradient(to top right, #11215f, #6a1658);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .glass-morph {
+    backdrop-filter: blur(22px);
+    --webkit-backdrop-filter: blur(22px);
+    --moz-backdrop-filter: blur(22px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 10;
+  }
+}
